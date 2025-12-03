@@ -133,17 +133,20 @@
 <!--Contact Form-->
   <h3>Contact me to share ideas about improving mental healthcare!</h3>
   <form action="/submit" method="post">
+   <fieldset>
+     <legend>Contact Information</legend>
     <!--Name Field-->
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name">
+    <label for="name">Name:<span aria-hidden="true">*</span></label><br>
+    <input type="text" id="name" name="name" required>
     <!--Email Field-->
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email">
+    <label for="email">Email:<span aria-hidden="true">*</span></label><br>
+    <input type="email" id="email" name="email" required>
     <!--Phone Number Field-->
-    <label for="phone">Phone:</label><br>
-    <input type="tel" id="phone" name="phone">
+    <label for="phone">Phone:<span aria-hidden="true">*</label><br>
+    <input type="tel" id="phone" name="phone" required>
     <!--Submit Button-->
     <input type="submit" value="Submit">
+   </fieldset>
   </form>
 </body>
 </html>
